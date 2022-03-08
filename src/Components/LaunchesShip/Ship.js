@@ -10,7 +10,7 @@ const Ship = (props) => {
                 <p>{launch_year}</p>
             </div>
             <div className='photo_right'>
-                <img className='img' src={mission_patch_small} alt='Ship'/>
+                <img src={mission_patch_small} alt='Ship'/>
             </div>
         </div>
     );

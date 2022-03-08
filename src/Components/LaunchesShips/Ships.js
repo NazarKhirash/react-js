@@ -12,8 +12,8 @@ const Ships = () => {
     }, [])
     return (
         <div>
-            {ships.map(ship => <Ship key={ship.mission_name} mission_name={ship.mission_name} launch_year={ship.launch_year}
-                                     mission_patch_small={ship.mission_patch_small}/>)}
+            {ships.filter(ship=>ship.launch_year!=='2020').map((ship) => <Ship key={ship.mission_name} mission_name={ship.mission_name} launch_year={ship.launch_year}
+                                     mission_patch_small={ship.links.mission_patch_small}/>)}
         </div>
     );
 };
